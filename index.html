@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/d45e81a389.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    /> 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="row bodyTop">
+        <div class="col-4">
+          <h1>
+            Monday, Jan 11
+          </h1>
+
+          <div class="input-group mb-3">
+            <form id="city-form">
+              <div class="input-group mb-3">
+                <input
+                  id="city-input"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter city"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                  id="button-addon2"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row currentData">
+            <div class="col-6 currentImg">
+              <!--<i id="current-icon" class="far fa-snowflake"></i>-->
+              <img id="current-icon" src="http://openweathermap.org/img/wn/13d@2x.png">
+            </div>
+            <div class="col-6 currentText">
+              <ul>
+                <li id="current-city" class="city">Zagreb</li>
+                <li id="current-temperature" class="temperature">0°C</li>
+                <li id="current-state" class="state">snow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-4"></div>
+      </div>
+      <div class="row bodyBottom">
+        <div class="col">
+          <div class="forecastCard">
+            <ul>
+              <li class="forecastCardDay">Tuesday</li>
+              <li class="forecastCardDate">Jan 12</li>
+              <li class="forecastCardImg"><i class="fas fa-cloud-sun"></i></li>
+              <li class="forecastCardTemp">0°</li>
+              <li class="forecastCardState">cloudy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="forecastCard">
+            <ul>
+              <li class="forecastCardDay">Wednesday</li>
+              <li class="forecastCardDate">Jan 13</li>
+              <li class="forecastCardImg"><i class="fas fa-sun"></i></li>
+              <li class="forecastCardTemp">0°C</li>
+              <li class="forecastCardState">sunny</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="forecastCard">
+            <ul>
+              <li class="forecastCardDay">Thursday</li>
+              <li class="forecastCardDate">Jan 14</li>
+              <li class="forecastCardImg"><i class="fas fa-sun"></i></li>
+              <li class="forecastCardTemp">5°C</li>
+              <li class="forecastCardState">sunny</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="forecastCard">
+            <ul>
+              <li class="forecastCardDay">Friday</li>
+              <li class="forecastCardDate">Jan 15</li>
+              <li class="forecastCardImg"><i class="fas fa-cloud-sun"></i></li>
+              <li class="forecastCardTemp">2°C</li>
+              <li class="forecastCardState">cloudy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="forecastCard">
+            <ul>
+              <li class="forecastCardDay">Saturday</li>
+              <li class="forecastCardDate">Jan 16</li>
+              <li class="forecastCardImg"><i class="fas fa-cloud-sun"></i></li>
+              <li class="forecastCardTemp">-4°C</li>
+              <li class="forecastCardState">cloudy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

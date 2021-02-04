@@ -1,0 +1,56 @@
+body {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    color: white;
+  }
+  .bodyTop {
+    height: 200px;
+  }
+  .bodyBottom {
+    height: 200px;
+  }
+  .container {
+    width: 50%;
+    margin-left: 10px;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  }
+  ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  h1 {
+    margin-top: 8px;
+    font-size: 18px;
+  }
+  .currentData {
+    margin-top: 40px;
+  }
+  .currentImg {
+    text-align: right;
+    margin-top: 40px;
+  }
+ 
+  
+  .city,
+  .state {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .temperature {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .city,
+  .temperature,
+  .state {
+    text-align: center;
+  }
+  .forecastCard {
+    margin: 0 auto;
+  }
+  .forecastCardImg {
+    font-size: 30px;
+  }
+  

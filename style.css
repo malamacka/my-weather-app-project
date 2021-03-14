@@ -24,22 +24,26 @@ body {
     margin-top: 8px;
     font-size: 18px;
   }
-  .currentData {
+  .currentData,
+  .currentText2 {
     margin-top: 40px;
+   
   }
   .currentImg {
-    text-align: right;
     margin-top: 40px;
   }
- 
+ .state {
+   font-size: 15px;
+   font-weight: bolder;
+
+ }
   
-  .city,
-  .state {
-    font-size: 20px;
+  .city {
+    font-size: 30px;
     font-weight: bolder;
   }
   .temperature {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
   }
   .city,
